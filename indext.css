@@ -1,0 +1,110 @@
+
+*{
+  background:white;
+  padding:0px;
+  margin:0px;
+  
+}
+
+section{
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+}
+
+section::before{
+  content:"";
+  position:absolute;
+  height:240px;
+  width:240px;
+  border-radius:50%;
+  background:linear-gradient(#f3f5f5,#9c27b0);
+  transform:translate(-150px,-100px);
+}
+
+
+
+
+section::after{
+  content:"";
+  position:absolute;
+  height:250px;
+  width:250px;
+  border-radius:50%;
+  background:linear-gradient(#ff2871,rgba(255,40,113,0.2) );
+  transform:translate(150px,150px);
+}
+
+
+.box{
+  position:relative;
+  height:240px;
+  width:300px;
+  display:flex;
+  justify-content:center;
+  align-content:center;
+  background:rgba(255,255,255,0.2);
+  z-index:1;
+  border-radius:10px;
+  backdrop-filter:blur(25px);
+  -webkit-box-shadow:0 -25px 45px rgba(0,0,0,0.25);
+}
+
+  .content{
+  background:none;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.box h1{
+  font-size:20px;
+  color:#9d2cb1;
+  
+  letter-spacing: 1.5px;
+  font-weight:800;
+  margin:0px;
+  display:block;
+  background:none;
+}
+
+ .parcent{
+
+   
+   color:black;
+   display:block;
+   background:none;
+   
+ }
+
+
+
+.BatteryShape{
+  width:110px;
+  height:40px;
+   border:1px solid black;
+  margin:4px;
+  border-radius:10px;
+}
+
+
+.level{
+  position:relative;
+  margin:1.1px;
+  width:107px;
+  height:38px;
+  border-radius:7px;
+
+}
+
+.parcentage{
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:50%;
+  height:100%;
+  background:linear-gradient(90deg ,#ff2871,#9c27b0);
+  border-radius:7px;
+}
